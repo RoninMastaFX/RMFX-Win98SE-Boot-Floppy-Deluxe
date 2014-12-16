@@ -26,7 +26,6 @@ copy HIMEMX.EXE %RAMD%:\ > NUL
 copy DOSKEY.COM %RAMD%:\ > NUL
 copy CTMOUSE.EXE %RAMD%:\ > NUL
 copy FIND.EXE %RAMD%:\ > NUL
-copy ATTRIB.EXE %RAMD%:\ > NUL
 copy LABEL.EXE %RAMD%:\ > NUL
 copy MOVE.EXE %RAMD%:\ > NUL
 copy DOSLFN.COM %RAMD%:\ > NUL

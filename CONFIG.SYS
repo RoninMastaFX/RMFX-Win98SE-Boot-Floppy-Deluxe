@@ -1,0 +1,105 @@
+[menu]
+menuitem=ALL, Auto-detect drivers. [*] RECOMMENDED [*]
+menuitem=IDE, Load IDE drivers.
+menuitem=SCSI, Load SCSI drivers. [NOT IMPLIMENTED]
+menuitem=SATA, Load SATA drivers.
+menuitem=RAID, Load RAID drivers. [NOT IMPLIMENTED]
+menuitem=AMD, Load AMD drivers.
+menuitem=ENHCD, Start Enhanced DOS Mode without drivers.
+menuitem=98HELP, View the Windows 98 Help file.
+menuitem=README, View the Boot Floppy Help file.
+menudefault=ALL,30
+menucolor=2,0
+
+[ALL]
+device=himemx.exe
+device=aspi2dos.sys
+device=aspi4dos.sys
+device=aspi8dos.sys
+device=aspi8u2.sys
+device=aspicd.sys /D:mscd000 /C0
+device=aspicd.sys /D:mscd001 /C1
+device=aspicd.sys /D:mscd002 /C2
+device=gcdrom.sys /D:mscd000 /C0
+device=gcdrom.sys /D:mscd001 /C1
+device=gcdrom.sys /D:mscd002 /C2
+device=amsida.sys /L
+device=amsicd.sys /D:mscd000 /C0
+device=amsicd.sys /D:mscd001 /C1
+device=amsicd.sys /D:mscd002 /C2
+device=amsirm.sys
+device=oakcdrom.sys /D:mscd000 /C0
+device=oakcdrom.sys /D:mscd001 /C1
+device=oakcdrom.sys /D:mscd002 /C2
+device=eltorito.sys /D:mscd000 /C0
+device=eltorito.sys /D:mscd001 /C1
+device=eltorito.sys /D:mscd002 /C2
+device=btdosm.sys
+device=flashpt.sys
+device=btcdrom.sys /D:mscd000 /C0
+device=btcdrom.sys /D:mscd001 /C1
+device=btcdrom.sys /D:mscd002 /C2
+
+[IDE]
+device=himemx.exe
+device=oakcdrom.sys /D:mscd000 /C0
+device=oakcdrom.sys /D:mscd001 /C1
+device=oakcdrom.sys /D:mscd002 /C2
+device=btdosm.sys
+device=flashpt.sys
+device=btcdrom.sys /D:mscd000 /C0
+device=btcdrom.sys /D:mscd001 /C1
+device=btcdrom.sys /D:mscd002 /C2
+device=aspi2dos.sys
+device=aspi8dos.sys
+device=aspi4dos.sys
+device=aspi8u2.sys
+device=aspicd.sys /D:mscd000 /C0
+device=aspicd.sys /D:mscd001 /C1
+device=aspicd.sys /D:mscd002 /C2
+
+[SCSI]
+device=himemx.exe
+shell=A:\command.com /P
+
+[SATA]
+device=himemx.exe
+device=gcdrom.sys /D:mscd000 /C0
+device=gcdrom.sys /D:mscd001 /C1
+device=gcdrom.sys /D:mscd002 /C2
+
+[RAID]
+device=himemx.exe
+shell=A:\command.com /P
+
+[AMD]
+device=himemx.exe
+device=aspi2dos.sys
+device=aspi4dos.sys
+device=aspi8dos.sys
+device=aspi8u2.sys
+device=aspicd.sys /D:mscd000 /C0
+device=aspicd.sys /D:mscd001 /C1
+device=aspicd.sys /D:mscd002 /C2
+device=amsida.sys /L
+device=amsicd.sys /D:mscd000 /C0
+device=amsicd.sys /D:mscd001 /C1
+device=amsicd.sys /D:mscd002 /C2
+device=amsirm.sys
+
+[ENHCD]
+device=himemx.exe
+
+[98HELP]
+device=himemx.exe
+
+[README]
+device=himemx.exe
+
+[COMMON]
+files=10
+buffers=10
+dos=high,umb
+stacks=9,256
+devicehigh=ramdrive.sys /E 32767 512 64
+lastdrive=z

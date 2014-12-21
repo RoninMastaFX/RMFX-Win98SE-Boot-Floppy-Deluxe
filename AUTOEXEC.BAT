@@ -22,7 +22,7 @@ copy DOSHELP.HLP %RAMD%:\ > NUL
 copy EDIT.HLP %RAMD%:\ > NUL
 copy FDISK.EXE %RAMD%:\ > NUL
 copy MEM.EXE %RAMD%:\ > NUL
-copy HIMEMX.EXE %RAMD%:\ > NUL
+copy HIMEM.SYS %RAMD%:\ > NUL
 copy DOSKEY.COM %RAMD%:\ > NUL
 copy CTMOUSE.EXE %RAMD%:\ > NUL
 copy FIND.EXE %RAMD%:\ > NUL

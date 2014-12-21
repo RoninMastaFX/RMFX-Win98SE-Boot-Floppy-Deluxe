@@ -1,10 +1,10 @@
 [menu]
 menuitem=ALL, Auto-detect drivers. [*] RECOMMENDED [*]
-menuitem=IDE, Load IDE drivers.
-menuitem=SCSI, Load SCSI drivers. [NOT IMPLIMENTED]
+menuitem=IDESCSI, Load IDE & SCSI drivers.
 menuitem=SATA, Load SATA drivers.
 menuitem=RAID, Load RAID drivers. [NOT IMPLIMENTED]
 menuitem=AMD, Load AMD drivers.
+menuitem=ZIPUSB, Load ZIP & USB drivers. [NOT IMPLIMENTED]
 menuitem=ENHCD, Start Enhanced DOS Mode without drivers.
 menuitem=98HELP, View the Windows 98 Help file.
 menuitem=README, View the Boot Floppy Help file.
@@ -12,7 +12,7 @@ menudefault=ALL,30
 menucolor=2,0
 
 [ALL]
-device=himemx.exe
+device=himem.sys
 device=aspi2dos.sys
 device=aspi4dos.sys
 device=aspi8dos.sys
@@ -40,8 +40,8 @@ device=btcdrom.sys /D:mscd000 /C0
 device=btcdrom.sys /D:mscd001 /C1
 device=btcdrom.sys /D:mscd002 /C2
 
-[IDE]
-device=himemx.exe
+[IDESCSI]
+device=himem.sys
 device=oakcdrom.sys /D:mscd000 /C0
 device=oakcdrom.sys /D:mscd001 /C1
 device=oakcdrom.sys /D:mscd002 /C2
@@ -58,22 +58,18 @@ device=aspicd.sys /D:mscd000 /C0
 device=aspicd.sys /D:mscd001 /C1
 device=aspicd.sys /D:mscd002 /C2
 
-[SCSI]
-device=himemx.exe
-shell=A:\command.com /P
-
 [SATA]
-device=himemx.exe
+device=himem.sys
 device=gcdrom.sys /D:mscd000 /C0
 device=gcdrom.sys /D:mscd001 /C1
 device=gcdrom.sys /D:mscd002 /C2
 
 [RAID]
-device=himemx.exe
+device=himem.sys
 shell=A:\command.com /P
 
 [AMD]
-device=himemx.exe
+device=himem.sys
 device=aspi2dos.sys
 device=aspi4dos.sys
 device=aspi8dos.sys
@@ -87,14 +83,18 @@ device=amsicd.sys /D:mscd001 /C1
 device=amsicd.sys /D:mscd002 /C2
 device=amsirm.sys
 
+[ZIPUSB]
+device=himem.sys
+shell=A:\command.com /P
+
 [ENHCD]
-device=himemx.exe
+device=himem.sys
 
 [98HELP]
-device=himemx.exe
+device=himem.sys
 
 [README]
-device=himemx.exe
+device=himem.sys
 
 [COMMON]
 files=10

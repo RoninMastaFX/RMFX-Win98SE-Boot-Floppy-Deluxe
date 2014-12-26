@@ -17,8 +17,6 @@ copy SLEEP.EXE %RAMD%:\ > NUL
 copy 98HELP.TXT %RAMD%:\ > NUL
 copy 98HELP.BAT %RAMD%:\ > NUL
 copy README.TXT %RAMD%:\ > NUL
-copy DOSHELP.COM %RAMD%:\ > NUL
-copy DOSHELP.HLP %RAMD%:\ > NUL
 copy EDIT.HLP %RAMD%:\ > NUL
 copy FDISK.EXE %RAMD%:\ > NUL
 copy MEM.EXE %RAMD%:\ > NUL

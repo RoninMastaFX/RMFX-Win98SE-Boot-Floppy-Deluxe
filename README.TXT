@@ -1,19 +1,20 @@
 //================================================================
-// RoninMastaFX's Windows 98 Second Edition Boot Floppy Deluxe
+// RoninMastaFX's Windows 98: Second Edition Boot Floppy Deluxe
 // Created by: Microsoft Corporation & RoninMastaFX von LeNoir
 //
 // Copyright (c) 1981-1999, 2013-2014 Microsoft Corporation.
 // All Rights Reserved.
 //
 // Written on: Tuesday, December 16, 2014
-// Released on: Tuesday, December 16, 2014
+// Updated on: Thursday, January 1, 2015
+// Released on: Thursday, January 1, 2015
 //
-// Document & Product Version: BETA 1.6.3.5.1 (v0.9.6.3.5)
+// Document & Product Version: BETA 1.6.4 (v0.9.8.9)
 //================================================================
 
 NOTES:
 
-Heya, and thanks for choosing my customized Windows 98 Second Edition Boot
+Heya, and thanks for choosing my customized Windows 98: Second Edition Boot
 Floppy! =) Here are three tips to help out with usage (and installation):
 
 1) To preserve the green colour after refreshing, type in `colour' (without
@@ -75,8 +76,8 @@ extention of the standard Windows 98: Second Edition Boot Floppy. ^^
 Q: Sound cool, but what about making edited copies? I mean...can't I make a
 public or private edit for myself or others to help spread the word?
 A: Of course, but only for builds starting with Beta 1.6.5. This build,
-v1.6.3.5, I politely request that no public edits or 'forks' be made except
-for helping out this project in the meantime, as v1.6.3.5 = the public test
+v1.6.4, I politely request that no public edits or 'forks' be made except
+for helping out this project in the meantime, as v1.6.4 = the public test
 version of v1.6.5. ;)
 
 Q: So does this mean that I can do edits or forks without your permission?
@@ -107,4 +108,4 @@ thanks to the unofficial Windows 98 First Edition, Windows 98 Second Edition &
 Windows Millennium Edition Service Pack authors! Without you, people like me
 wouldn't get the `best' usage from these great classic gems that we classify
 as `Operating Systems'. From the bottom of my heart, thank you very much, and
-God Bless y'all! =) Seriously, I do mean it! ;) =)
+God Bless y'all! =)

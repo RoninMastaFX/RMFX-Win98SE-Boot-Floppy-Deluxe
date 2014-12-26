@@ -8,7 +8,7 @@ menuitem=ZIPUSB, Load ZIP & USB drivers. [NOT IMPLIMENTED]
 menuitem=ENHCD, Start Enhanced DOS Mode without drivers.
 menuitem=98HELP, View the Windows 98 Help file.
 menuitem=README, View the Boot Floppy Help file.
-menudefault=ALL,30
+menudefault=ALL,20
 menucolor=2,0
 
 [ALL]

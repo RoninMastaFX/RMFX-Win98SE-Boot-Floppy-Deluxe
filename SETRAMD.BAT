@@ -66,6 +66,6 @@ echo              __________________________________________________
 echo            /                                                    \
 echo          /               [] RoninMastaFX Designs []             \
 echo         (  [] Windows 98 Second Edition Boot Floppy DELUXE []  )
-echo          \    [] BETA 1.6.3.5.1 (v0.9.6.3.5) - 12/16/2014 []    /
+echo          \      [] BETA 1.6.4 (v0.9.8.9) - 01/01/2015 []      /
 echo            \ __________________________________________________ /
 echo.

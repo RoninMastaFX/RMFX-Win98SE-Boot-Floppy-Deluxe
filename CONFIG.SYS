@@ -1,7 +1,7 @@
 [menu]
-menuitem=ALL, Auto-detect drivers. [*] RECOMMENDED [*]
-menuitem=IDESCSI, Load IDE & SCSI drivers.
-menuitem=SATA, Load SATA drivers.
+menuitem=ALL, Auto-detect drivers. [*] CAUTION [*]
+menuitem=SCSIIDE, Load SCSI & (older) IDE drivers.
+menuitem=SATAIDE, Load SATA & (newer) IDE drivers.
 menuitem=RAID, Load RAID drivers. [NOT IMPLIMENTED]
 menuitem=AMD, Load AMD drivers.
 menuitem=ZIPUSB, Load ZIP & USB drivers. [NOT IMPLIMENTED]
@@ -13,34 +13,34 @@ menucolor=2,0
 
 [ALL]
 device=himem.sys
+device=oakcdrom.sys /D:mscd000 /C0
+device=oakcdrom.sys /D:mscd001 /C1
+device=oakcdrom.sys /D:mscd002 /C2
+device=btdosm.sys
+device=flashpt.sys
+device=btcdrom.sys /D:mscd000 /C0
+device=btcdrom.sys /D:mscd001 /C1
+device=btcdrom.sys /D:mscd002 /C2
 device=aspi2dos.sys
-device=aspi4dos.sys
 device=aspi8dos.sys
+device=aspi4dos.sys
 device=aspi8u2.sys
 device=aspicd.sys /D:mscd000 /C0
 device=aspicd.sys /D:mscd001 /C1
 device=aspicd.sys /D:mscd002 /C2
-device=gcdrom.sys /D:mscd000 /C0
-device=gcdrom.sys /D:mscd001 /C1
-device=gcdrom.sys /D:mscd002 /C2
+device=xgcdrom.sys /D:mscd000 /C0
+device=xgcdrom.sys /D:mscd001 /C1
+device=xgcdrom.sys /D:mscd002 /C2
 device=amsida.sys /L
 device=amsicd.sys /D:mscd000 /C0
 device=amsicd.sys /D:mscd001 /C1
 device=amsicd.sys /D:mscd002 /C2
 device=amsirm.sys
-device=oakcdrom.sys /D:mscd000 /C0
-device=oakcdrom.sys /D:mscd001 /C1
-device=oakcdrom.sys /D:mscd002 /C2
 device=eltorito.sys /D:mscd000 /C0
 device=eltorito.sys /D:mscd001 /C1
 device=eltorito.sys /D:mscd002 /C2
-device=btdosm.sys
-device=flashpt.sys
-device=btcdrom.sys /D:mscd000 /C0
-device=btcdrom.sys /D:mscd001 /C1
-device=btcdrom.sys /D:mscd002 /C2
 
-[IDESCSI]
+[SCSIIDE]
 device=himem.sys
 device=oakcdrom.sys /D:mscd000 /C0
 device=oakcdrom.sys /D:mscd001 /C1
@@ -58,11 +58,11 @@ device=aspicd.sys /D:mscd000 /C0
 device=aspicd.sys /D:mscd001 /C1
 device=aspicd.sys /D:mscd002 /C2
 
-[SATA]
+[SATAIDE]
 device=himem.sys
-device=gcdrom.sys /D:mscd000 /C0
-device=gcdrom.sys /D:mscd001 /C1
-device=gcdrom.sys /D:mscd002 /C2
+device=xgcdrom.sys /D:mscd000 /C0
+device=xgcdrom.sys /D:mscd001 /C1
+device=xgcdrom.sys /D:mscd002 /C2
 
 [RAID]
 device=himem.sys
@@ -70,13 +70,6 @@ shell=A:\command.com /P
 
 [AMD]
 device=himem.sys
-device=aspi2dos.sys
-device=aspi4dos.sys
-device=aspi8dos.sys
-device=aspi8u2.sys
-device=aspicd.sys /D:mscd000 /C0
-device=aspicd.sys /D:mscd001 /C1
-device=aspicd.sys /D:mscd002 /C2
 device=amsida.sys /L
 device=amsicd.sys /D:mscd000 /C0
 device=amsicd.sys /D:mscd001 /C1

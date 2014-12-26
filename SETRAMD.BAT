@@ -62,10 +62,10 @@ echo.
 echo.
 echo.
 echo.
-echo              __________________________________________________
-echo            /                                                    \
-echo          /               [] RoninMastaFX Designs []             \
-echo         (  [] Windows 98 Second Edition Boot Floppy DELUXE []  )
-echo          \      [] BETA 1.6.4 (v0.9.8.9) - 01/01/2015 []      /
-echo            \ __________________________________________________ /
+echo              ___________________________________________________
+echo            /                                                     \
+echo          /               [] RoninMastaFX Designs []              \
+echo         (  [] Windows 98 Second: Edition Boot Floppy DELUXE []  )
+echo          \       [] BETA v1.6.4 (v0.9.8.9) - 01/01/2015 []       /
+echo            \ ___________________________________________________ /
 echo.

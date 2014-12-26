@@ -9,7 +9,7 @@
 // Updated on: Thursday, January 1, 2015
 // Released on: Thursday, January 1, 2015
 //
-// Document & Product Version: BETA 1.6.4 (v0.9.8.9)
+// Document & Product Version: BETA v1.6.4 (v0.9.8.9)
 //================================================================
 
 NOTES:

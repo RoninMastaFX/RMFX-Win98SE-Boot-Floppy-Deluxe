@@ -85,16 +85,15 @@ echo Press the ENTER/RETURN key when you're finished.
 %RAMD%:\SLEEP.EXE 5
 %RAMD%:\COLOUR.COM
 echo.
-echo //================================================================
-echo // Welcome to RoninMastaFX's Windows 98 Second Edition Boot Floppy
-echo // Deluxe! To read the MS-DOS Help File, type DOSHELP and press
-echo // Enter. To read the Windows 98 Documentation, type 98HELP and
-echo // press ENTER. To read the Boot Floppy Readme, type README and
-echo // press ENTER. To switch from the green text to the standard grey
-echo // coloured variant, type CLS and press ENTER. To go back to the
-echo // green text, type COLOUR and press ENTER. To restart your PC,
-echo // type RESTART and press ENTER. Good Luck!
-echo //================================================================
+echo //==============================================================================
+echo // Welcome to 'RoninMastaFX's Windows 98: Second Edition Boot Floppy !!Deluxe!!'
+echo // To read the MS-DOS Help File, type DOSHELP and press Enter. To read the
+echo // Windows 98 Documentation, type 98HELP and press ENTER. To read the Boot
+echo // Floppy Readme, type README and press ENTER. To switch from the green text to
+echo // the standard grey coloured variant, type CLS and press ENTER. To go back to
+echo // the green text, type COLOUR and press ENTER. To restart your PC, type RESTART
+echo // and press ENTER. Good Luck!
+echo //==============================================================================
 echo.
 echo The diagnostic tools were loaded to drive %RAMD%.
 echo.

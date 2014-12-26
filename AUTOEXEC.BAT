@@ -16,16 +16,18 @@ copy COLOUR.COM %RAMD%:\ > NUL
 copy SLEEP.EXE %RAMD%:\ > NUL
 copy 98HELP.TXT %RAMD%:\ > NUL
 copy 98HELP.BAT %RAMD%:\ > NUL
+copy DOSHELP.BAT %RAMD%:\ > NUL
 copy README.TXT %RAMD%:\ > NUL
 copy EDIT.HLP %RAMD%:\ > NUL
 copy FDISK.EXE %RAMD%:\ > NUL
 copy MEM.EXE %RAMD%:\ > NUL
 copy HIMEM.SYS %RAMD%:\ > NUL
+copy SMARTDRV.EXE %RAMD%:\ > NUL
 copy DOSKEY.COM %RAMD%:\ > NUL
+copy KEYB.EXE %RAMD%:\ > NUL
 copy CTMOUSE.EXE %RAMD%:\ > NUL
 copy FIND.EXE %RAMD%:\ > NUL
 copy LABEL.EXE %RAMD%:\ > NUL
-copy MOVE.EXE %RAMD%:\ > NUL
 copy DOSLFN.COM %RAMD%:\ > NUL
 %RAMD%:\extract /y /e /l %RAMD%: ebd.cab > NUL
 copy %RAMD%:\HELP.BAT %RAMD%:\README.BAT > NUL
@@ -72,6 +74,7 @@ GOTO END
 RESTART.COM
 
 :MAIN
+LH %RAMD%:\SMARTDRV.EXE > NUL
 LH %RAMD%:\DOSKEY.COM /INSERT > NUL
 %RAMD%:\COLOUR.COM
 rem clean up environment variables
@@ -85,17 +88,17 @@ echo Press the ENTER/RETURN key when you're finished.
 %RAMD%:\SLEEP.EXE 5
 %RAMD%:\COLOUR.COM
 echo.
-echo //==============================================================================
-echo // Welcome to 'RoninMastaFX's Windows 98: Second Edition Boot Floppy !!Deluxe!!'
+echo //=============================================================================
+echo // Welcome to 'RoninMastaFX's Windows 98: Second Edition Boot Floppy Deluxe'
 echo // To read the MS-DOS Help File, type DOSHELP and press Enter. To read the
 echo // Windows 98 Documentation, type 98HELP and press ENTER. To read the Boot
 echo // Floppy Readme, type README and press ENTER. To switch from the green text to
 echo // the standard grey coloured variant, type CLS and press ENTER. To go back to
-echo // the green text, type COLOUR and press ENTER. To restart your PC, type RESTART
-echo // and press ENTER. Good Luck!
-echo //==============================================================================
+echo // the green text, type COLOUR and press ENTER. To restart your PC, type
+echo // RESTART and press ENTER. Good Luck!
+echo //=============================================================================
 echo.
 echo The diagnostic tools were loaded to drive %RAMD%.
 echo.
-LH %RAMD%:\MSCDEX.EXE /D:MSCD000 /D:MSCD001 /D:MSCD002 /L:%CDROM%
+LH %RAMD%:\MSCDEX.EXE /D:MSCD000 /D:MSCD001 /D:SCSIDE0 /D:SCSIDE1 /L:%CDROM%
 echo 

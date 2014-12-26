@@ -2,7 +2,7 @@
 // RoninMastaFX's Windows 98: Second Edition Boot Floppy Deluxe
 // Created by: Microsoft Corporation & RoninMastaFX von LeNoir
 //
-// Copyright (c) 1981-1999, 2013-2014 Microsoft Corporation.
+// Copyright (c) 1981-1999, 2013-2015 Microsoft Corporation.
 // All Rights Reserved.
 //
 // Written on: Tuesday, December 16, 2014
@@ -66,12 +66,12 @@ A: Simple, it started out as a personal pet project of mine in mid December,
 further simplication in some areas and some expansion in others to help myself
 out even further, but then I decided that other can also reap what I sown and
 benefit from this project, especially those on VOGONS! =) ^^ So I took my time
-and did it properly, and so far except for one single option (as of Beta
-v1.6.3.5), it "Just Works". Although keep in mind that it is a BETA, so some
-f*ckups (sadly) may occur. However, with this project being tested on so many
-systems over the course of December 2013 to December 2014, lots of testing was
-done from Beta 1.5A to Beta 1.6.3.5, and it brought forth this awesome
-extention of the standard Windows 98: Second Edition Boot Floppy. ^^
+and did it properly, and so far (as of Beta v1.6.4), it "Just Works". Although
+keep in mind that it is a BETA, so some f*ckups (sadly) may occur. However,
+with this project being tested on so many systems over the course of December
+2013 to December 2014, lots of testing was done from Beta v1.5A to Beta
+v1.6.3.5, and it brought forth this awesome extention of the standard
+Windows 98: Second Edition Boot Floppy. ^^
 
 Q: Sound cool, but what about making edited copies? I mean...can't I make a
 public or private edit for myself or others to help spread the word?

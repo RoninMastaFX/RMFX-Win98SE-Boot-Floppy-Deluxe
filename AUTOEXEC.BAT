@@ -89,7 +89,7 @@ echo Press the ENTER/RETURN key when you're finished.
 %RAMD%:\COLOUR.COM
 echo.
 echo //=============================================================================
-echo // Welcome to 'RoninMastaFX's Windows 98: Second Edition Boot Floppy Deluxe'
+echo // Welcome to 'RoninMastaFX's Windows 98: Second Edition Boot Floppy Deluxe'!
 echo // To read the MS-DOS Help File, type DOSHELP and press Enter. To read the
 echo // Windows 98 Documentation, type 98HELP and press ENTER. To read the Boot
 echo // Floppy Readme, type README and press ENTER. To switch from the green text to

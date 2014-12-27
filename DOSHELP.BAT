@@ -1,3 +1,3 @@
-@ECHO
-ECHO Apologies, but the MS-DOS Help is not included in this beta build.
-@PAUSE
+@echo off
+echo Apologies, but the MS-DOS Documentation is not included in this beta.
+@pause

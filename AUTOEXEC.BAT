@@ -29,6 +29,7 @@ copy CTMOUSE.EXE %RAMD%:\ > NUL
 copy FIND.EXE %RAMD%:\ > NUL
 copy LABEL.EXE %RAMD%:\ > NUL
 copy DOSLFN.COM %RAMD%:\ > NUL
+copy CLEAR.BAT %RAMD%:\ > NUL
 %RAMD%:\extract /y /e /l %RAMD%: ebd.cab > NUL
 copy %RAMD%:\HELP.BAT %RAMD%:\README.BAT > NUL
 del %RAMD%:\HELP.BAT > NUL
@@ -89,7 +90,7 @@ echo Press the ENTER/RETURN key when you're finished.
 %RAMD%:\COLOUR.COM
 echo.
 echo //=============================================================================
-echo // Welcome to 'RoninMastaFX's Windows 98: Second Edition Boot Floppy Deluxe'!
+echo // Welcome to `RoninMastaFX's Windows 98: Second Edition Boot Floppy Deluxe'!
 echo // To read the MS-DOS Help File, type DOSHELP and press Enter. To read the
 echo // Windows 98 Documentation, type 98HELP and press ENTER. To read the Boot
 echo // Floppy Readme, type README and press ENTER. To switch from the green text to

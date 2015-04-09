@@ -1,11 +1,11 @@
 [menu]
 menuitem=ALL, Auto-detect drivers. [*] CAUTION [*]
-menuitem=SCSIIDE, Load Traditional SCSI & IDE drivers.
-menuitem=SATAIDE, Load XGCDROM SATA & IDE drivers.
-menuitem=RAID, Load RAID drivers. [NOT IMPLIMENTED]
+menuitem=IDE, Load IDE drivers.
+menuitem=SCSI, Load SCSI drivers.
+menuitem=SATA, Load SATA drivers.
 menuitem=PCMCIA, Load PCMCIA drivers.
-menuitem=ZIPUSB, Load ZIP & USB drivers. [NOT IMPLIMENTED]
-menuitem=ENHCD, Start Enhanced DOS Mode without drivers.
+menuitem=IOMEGA, Load IOMEGA drivers. [NOT IMPLIMENTED]
+menuitem=DRIVERLESS, Start MS-DOS without drivers.
 menuitem=98HELP, View the Windows 98 Help file.
 menuitem=README, View the Boot Floppy Readme.
 menudefault=ALL,20
@@ -15,13 +15,13 @@ menucolor=2,0
 device=himem.sys
 device=oakcdrom.sys /D:mscd000 /C0
 device=oakcdrom.sys /D:mscd001 /C1
+device=sbide.sys /D:mscd000 /C0
+device=sbide.sys /D:mscd001 /C1
 device=btdosm.sys
 device=flashpt.sys
 device=btcdrom.sys /D:mscd000 /C0
 device=btcdrom.sys /D:mscd001 /C1
-device=xgcdrom.sys /D:mscd000 /C0
-device=xgcdrom.sys /D:mscd001 /C1
-device=pcmi80cl.sys  /QA
+device=pcmi80cl.sys /QA
 device=statpflp.sys
 device=stidehdd.sys
 device=statpcdm.sys /I:1 /D:scside0
@@ -33,7 +33,12 @@ device=aspi8u2.sys
 device=aspicd.sys /D:mscd000 /C0
 device=aspicd.sys /D:mscd001 /C1
 
-[SCSIIDE]
+[IDE]
+device=himem.sys
+device=xcdrom.sys /D:mscd000 /C0
+device=xcdrom.sys /D:mscd001 /C1
+
+[SCSI]
 device=himem.sys
 device=oakcdrom.sys /D:mscd000 /C0
 device=oakcdrom.sys /D:mscd001 /C1
@@ -48,28 +53,24 @@ device=aspi8u2.sys
 device=aspicd.sys /D:mscd000 /C0
 device=aspicd.sys /D:mscd001 /C1
 
-[SATAIDE]
+[SATA]
 device=himem.sys
-device=xgcdrom.sys /D:mscd000 /C0
-device=xgcdrom.sys /D:mscd001 /C1
-
-[RAID]
-device=himem.sys
-shell=A:\command.com /P
+device=gcdrom.sys /D:mscd000 /C0
+device=gcdrom.sys /D:mscd001 /C1
 
 [PCMCIA]
 device=himem.sys
-device=pcmi80cl.sys  /QA
+device=pcmi80cl.sys /QA
 device=statpflp.sys
 device=stidehdd.sys
 device=statpcdm.sys /I:1 /D:scside0
 device=statpcdm.sys /I:2 /D:scside1
 
-[ZIPUSB]
+[IOMEGA]
 device=himem.sys
 shell=A:\command.com /P
 
-[ENHCD]
+[DRIVERLESS]
 device=himem.sys
 
 [98HELP]

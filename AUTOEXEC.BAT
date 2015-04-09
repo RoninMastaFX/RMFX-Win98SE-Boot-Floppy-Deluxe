@@ -13,26 +13,8 @@ copy COMMAND.COM %RAMD%:\ > NUL
 set comspec=%RAMD%:\command.com
 copy EXTRACT.EXE %RAMD%:\ > NUL
 copy COLOUR.COM %RAMD%:\ > NUL
-copy SLEEP.EXE %RAMD%:\ > NUL
-copy 98HELP.TXT %RAMD%:\ > NUL
-copy 98HELP.BAT %RAMD%:\ > NUL
-copy DOSHELP.BAT %RAMD%:\ > NUL
-copy README.TXT %RAMD%:\ > NUL
-copy EDIT.HLP %RAMD%:\ > NUL
-copy FDISK.EXE %RAMD%:\ > NUL
-copy MEM.EXE %RAMD%:\ > NUL
-copy HIMEM.SYS %RAMD%:\ > NUL
 copy SMARTDRV.EXE %RAMD%:\ > NUL
-copy DOSKEY.COM %RAMD%:\ > NUL
-copy KEYB.EXE %RAMD%:\ > NUL
-copy CTMOUSE.EXE %RAMD%:\ > NUL
-copy FIND.EXE %RAMD%:\ > NUL
-copy LABEL.EXE %RAMD%:\ > NUL
-copy DOSLFN.COM %RAMD%:\ > NUL
-copy CLEAR.BAT %RAMD%:\ > NUL
 %RAMD%:\extract /y /e /l %RAMD%: ebd.cab > NUL
-copy %RAMD%:\HELP.BAT %RAMD%:\README.BAT > NUL
-del %RAMD%:\HELP.BAT > NUL
 
 IF "%config%"=="98HELP" GOTO 98HELP
 IF "%config%"=="README" GOTO README
@@ -86,17 +68,17 @@ set LglDrv=
 echo.
 echo Press the PAUSE/BREAK key to pause the screen.
 echo Press the ENTER/RETURN key when you're finished.
-%RAMD%:\SLEEP.EXE 5
+%RAMD%:\SLEEP.EXE 6
 %RAMD%:\COLOUR.COM
 echo.
 echo //=============================================================================
-echo // Welcome to `RoninMastaFX's Windows 98: Second Edition Boot Floppy Deluxe'!
-echo // To read the MS-DOS Help File, type DOSHELP and press Enter. To read the
-echo // Windows 98 Documentation, type 98HELP and press ENTER. To read the Boot
+echo // Welcome to "RoninMastaFX's Windows 98: Second Edition Boot Floppy Deluxe"!
+echo // To read the MS-DOS 7.10 Help files, type DOS7HELP and press Enter. To read
+echo // the Windows 98 Documentation, type 98HELP and press ENTER. To read the Boot
 echo // Floppy Readme, type README and press ENTER. To switch from the green text to
 echo // the standard grey coloured variant, type CLS and press ENTER. To go back to
-echo // the green text, type COLOUR and press ENTER. To restart your PC, type
-echo // RESTART and press ENTER. Good Luck!
+echo // the green text, type COLOUR and press ENTER. To shutdown, restart or
+echo // suspend, type SHUTDOWN and press ENTER. Good Luck!
 echo //=============================================================================
 echo.
 echo The diagnostic tools were loaded to drive %RAMD%.

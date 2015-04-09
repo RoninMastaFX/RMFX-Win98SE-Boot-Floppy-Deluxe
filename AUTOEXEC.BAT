@@ -13,6 +13,8 @@ copy COMMAND.COM %RAMD%:\ > NUL
 set comspec=%RAMD%:\command.com
 copy EXTRACT.EXE %RAMD%:\ > NUL
 copy COLOUR.COM %RAMD%:\ > NUL
+copy FINDRAMD.EXE %RAMD%:\ > NUL
+copy SHUTDOWN.COM %RAMD%:\ > NUL
 copy SMARTDRV.EXE %RAMD%:\ > NUL
 %RAMD%:\extract /y /e /l %RAMD%: ebd.cab > NUL
 
@@ -22,39 +24,18 @@ echo.
 GOTO MAIN
 
 :98HELP
-COLOUR.COM
-call 98help.bat
-echo Your machine will now restart and the startup menu will appear.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
+%RAMD%:\COLOUR.COM
+call %RAMD%:\98help.bat
 GOTO END
 
 :README
-COLOUR.COM
-call readme.bat
-echo Your machine will now restart and the startup menu will appear.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
+%RAMD%:\COLOUR.COM
+call %RAMD%:\readme.bat
 GOTO END
 
 :END
-RESTART.COM
+%RAMD%:\COLOUR.COM
+%RAMD%:\SHUTDOWN.COM
 
 :MAIN
 LH %RAMD%:\SMARTDRV.EXE > NUL
@@ -73,8 +54,8 @@ echo Press the ENTER/RETURN key when you're finished.
 echo.
 echo //=============================================================================
 echo // Welcome to "RoninMastaFX's Windows 98: Second Edition Boot Floppy Deluxe"!
-echo // To read the MS-DOS 7.10 Help files, type DOS7HELP and press Enter. To read
-echo // the Windows 98 Documentation, type 98HELP and press ENTER. To read the Boot
+echo // To read the MS-DOS 7.10 Help, type DOS7HELP and press Enter. To read the
+echo // Windows 98 Boot Disk Help, type 98HELP and press ENTER. To read this Boot
 echo // Floppy Readme, type README and press ENTER. To switch from the green text to
 echo // the standard grey coloured variant, type CLS and press ENTER. To go back to
 echo // the green text, type COLOUR and press ENTER. To shutdown, restart or

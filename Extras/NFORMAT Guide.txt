@@ -1,0 +1,4 @@
+How-to get a 1.72 MB formatted floppy disk from a generic 1.44 MB floppy disk:
+Set tracks to 82, and disable "Immediate Verify".
+
+NOTICE: Does not run properly in a Windows 95/98/ME DOS box. It may or may not work with Windows NT 4/2000/XP/Vista/7/8.x/10 DOS box (CMD.EXE), but extensive testing was not done, hence there's no gurantee that it'll work 100% or if at all.

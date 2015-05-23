@@ -10,10 +10,8 @@ menudefault=DRIVERLESS,20
 menucolor=2,0
 
 [DRIVERLESS]
-device=himem.sys
 
 [IDESCSI]
-device=himem.sys
 device=oakcdrom.sys /D:mscd000 /C0
 device=oakcdrom.sys /D:mscd001 /C1
 device=btdosm.sys
@@ -28,17 +26,14 @@ device=aspicd.sys /D:mscd000 /C0
 device=aspicd.sys /D:mscd001 /C1
 
 [NEWIDE]
-device=himem.sys
 device=xcdrom.sys /D:mscd000 /C0
 device=xcdrom.sys /D:mscd001 /C1
 
 [SATA]
-device=himem.sys
 device=gcdrom.sys /D:mscd000 /C0
 device=gcdrom.sys /D:mscd001 /C1
 
 [PCMCIA]
-device=himem.sys
 device=pcmi80cl.sys /QA
 device=statpflp.sys
 device=stidehdd.sys
@@ -46,13 +41,11 @@ device=statpcdm.sys /I:1 /D:scside0
 device=statpcdm.sys /I:2 /D:scside1
 
 [USB]
-device=himem.sys
 device=nj32disk.sys /R
 devicehigh=usbaspi.exe /w
 device=usbexfat.com
 
 [1394]
-device=himem.sys
 device=nj32disk.sys /R
 device=sbp2aspi.sys /RBC
 
@@ -61,5 +54,7 @@ files=30
 buffers=10,0
 dos=high,umb
 stacks=9,256
+device=himem.sys
+device=emm386.exe noems
 devicehigh=ramdrive.sys /E 32767 512 64
 lastdrive=z
